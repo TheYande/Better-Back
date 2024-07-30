@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "better-back",
+	"version": "${version}",
+	"name": "Better back",
+	"description": "Better Back provides a /back command that should work for deaths and teleportations",
+	"authors": [
+		"Yande"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-back/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yande.betterback.BetterBack"
+		]
+	},
+	"mixins": [
+		"better-back.mixins.json",
+		{
+			"config": "better-back.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		
+	}
+}
